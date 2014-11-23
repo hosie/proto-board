@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<!-- Prereqs-->
+
+    <title>{{ title }}</title>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/layout-default-latest.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">    
+  <script src="//code.jquery.com/jquery-1.11.0.js"></script>  
+  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>  
+  <script src="http://layout.jquery-dev.com/lib/js/jquery.layout-latest.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+
+  <!--integration-dashboard modules and styles-->  
+  <link rel="stylesheet" href="/stylesheets/style.css">  
+  <script src="javascripts/protoboard.js"></script>  
+
+
+<script>
+    var inputData= {{ inputData }} ;
+    function draw(data,svg){
+    {{{ inputCode }}}
+    };
+    $(document).ready(function () {
+        $('body').layout(
+        { 
+            west:{
+                size:450
+            },
+            east:{
+                size:350
+            },
+            south:{
+               size:450
+            }
+        });
+
+        $('#southContainer').layout(
+        { 
+            west:{
+                size:900
+            }
+        });
+        console.log("layed out");
+
+        initProtoboard();
+    });
+</script>
+</head>
+<body>
+
+  <iframe src="/preview" id="centerContainer" class="ui-layout-center ui-layout-pane"></iframe>
+
+  <!-- TODO the actual rendered widget -->
+  </div>
+  <div id="northContainer" class="ui-layout-north ui-layout-pane">
+    <div id="toolbar" class="ui-widget-header ui-corner-all">
+      <button id="reloadButton">Reload</button>
+      <button id="addEventButton">Add event</button>
+      
+    </div>
+    
+  <!-- TODO add widgets for the user to control the data published on relvant topics -->
+  </div>
+  <div id="southContainer" class="ui-layout-south ui-layout-pane">
+  <div id="soutWestContainer" class="ui-layout-west ui-layout-pane">
+      <div>
+        function(data,svg,div){<br>
+        <textArea id="codeInput"> {{{ inputCode }}}</textArea>
+        <br>}<br>
+      </div>
+    </div>
+    <div id="southCenterContainer" class="ui-layout-center ui-layout-pane">
+      <div>
+      &lt;svg&gt;<br><span>&lt;defs&gt;</span><br>
+        <textArea id="defsInput"> {{{ defs }}} </textArea>
+      </div>
+    </div>
+  </div>
+  <div id="eastContainer" class="ui-layout-east ui-layout-pane">
+  <h4>Output data</h4>
+  <!-- TODO add widgets to display the output of interacting with the widget i.e. start/stop actions resulting in REST calls to the Integartion Node -->
+  </div>
+  <div id="westContainer" class="ui-layout-west ui-layout-pane">
+  <h4>Input data</h4>
+      <textArea id="dataInput" cols="25" rows="7"> {{{ inputData }}}</textArea>
+  </div>
+</body>
+</html>

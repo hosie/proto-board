@@ -1,0 +1,25 @@
+<html>
+    <head>
+      <script src="//code.jquery.com/jquery-1.11.0.js"></script>  
+      <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>  
+      <script src="http://layout.jquery-dev.com/lib/js/jquery.layout-latest.js"></script>
+      <script src="http://d3js.org/d3.v3.min.js"></script>
+    </head>
+    <body>
+    
+    <div id="mainDiv">
+    <svg width="500" height="500" id="mainSVG">
+    <defs>
+    {{{defs}}}
+    </defs>
+    </svg>
+    </div>
+    <script>
+
+        var dom  = $("#mainDiv").get(0);
+        var svg = d3.select("#mainSVG").append("g");
+        var data = {{{inputData}}};
+        {{{ inputCode }}}
+        </script>    
+    </body>
+</html>
