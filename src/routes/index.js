@@ -16,6 +16,7 @@ fs.exists("sampleData.json",function(exists){
 
 function saveInputData(inputDataBuffer,callback){
   inputData=inputDataBuffer;
+  console.log('saveInputData ' + inputDataBuffer);
   fs.writeFile("sampleData.json",inputData,function (err) {
     if (err) throw err;
       console.log('It\'s saved!');
@@ -38,6 +39,7 @@ fs.exists("preview.js",function(exists){
 
 function saveInputCode(inputCodeBuffer,callback){
   inputCode=inputCodeBuffer;
+  console.log('saveInputCode: ' + inputCodeBuffer);
   fs.writeFile("preview.js",inputCode,function (err) {
     if (err) throw err;
       console.log('It\'s saved!');
@@ -59,6 +61,7 @@ fs.exists("defs.xml",function(exists){
 
 function saveInputDefs(defsBuffer,callback){
   defs=defsBuffer;
+  console.log('saveInputDefs ' + defsBuffer);
   fs.writeFile("defs.xml",defs,function (err) {
     if (err) throw err;
       console.log('It\'s saved!');

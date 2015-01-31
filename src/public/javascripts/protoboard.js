@@ -18,6 +18,9 @@ function initProtoboard(){
  
       console.log("posting");
         var codeText = $("#codeInput").val();
+        console.log("code input = " + codeText);
+        codeText = editor.getValue();
+        console.log("code input = " + codeText);
         $.ajax({
 			    	type: 'POST',
 			    	data: codeText,

@@ -6,7 +6,23 @@
 
     <title>{{ title }}</title>
   <link type="text/css" rel="stylesheet" href="/stylesheets/layout-default-latest.css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">    
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+
+    <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #codeInput {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style>
   <script src="//code.jquery.com/jquery-1.11.0.js"></script>  
   <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>  
   <script src="http://layout.jquery-dev.com/lib/js/jquery.layout-latest.js"></script>
@@ -66,9 +82,13 @@
   <div id="southContainer" class="ui-layout-south ui-layout-pane">
   <div id="soutWestContainer" class="ui-layout-west ui-layout-pane">
       <div>
-        function(data,svg,div){<br>
-        <textArea id="codeInput"> {{{ inputCode }}}</textArea>
-        <br>}<br>
+        <!--
+        <textArea id="codeInput"> {{{ inputCode }}}</textArea>-->
+        <pre id="codeInput">
+        function(data,svg,div){
+        }
+        </pre>
+        
       </div>
     </div>
     <div id="southCenterContainer" class="ui-layout-center ui-layout-pane">
@@ -86,5 +106,13 @@
   <h4>Input data</h4>
       <textArea id="dataInput" cols="25" rows="7"> {{{ inputData }}}</textArea>
   </div>
+  
+  <script src="prereqs/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("codeInput");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
+  
 </body>
 </html>
