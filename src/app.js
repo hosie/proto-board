@@ -8,7 +8,12 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+
 var app = express();
+
+//Use a proxy to get around the cross domain issues in browser
+var proxy = require('./routes/proxy.js');
+app.use('/proxy',proxy);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

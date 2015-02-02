@@ -104,15 +104,21 @@
   </div>
   <div id="westContainer" class="ui-layout-west ui-layout-pane">
   <h4>Input data</h4>
+      <span>
+      Get data from http <br>
+      <input type="url" value="http://localhost:4415/apiv1?depth=7"  id="dataUrlInput"></input>
+      <button onClick="getDataFromURL()">GET</button>
+      </span>
       <textArea id="dataInput" cols="25" rows="7"> {{{ inputData }}}</textArea>
   </div>
   
   <script src="prereqs/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("codeInput");
-    editor.setTheme("ace/theme/twilight");
-    editor.getSession().setMode("ace/mode/javascript");
-</script>
+  <script>
+      var editor = ace.edit("codeInput");
+      editor.setTheme("ace/theme/twilight");
+      editor.getSession().setMode("ace/mode/javascript");
+      
+  </script>
   
 </body>
 </html>

@@ -11,6 +11,17 @@ Author John Hosie
       John Hosie - initial implementation 
 */
 
+function getDataFromURL(){
+          var url = "/proxy/" + encodeURIComponent( $("#dataUrlInput").val());
+
+          var dataFromUrl=$.getJSON(url,function(data){
+              console.log("Success");
+              console.dir(data);
+              $("#dataInput").val(JSON.stringify(data,"null",1));
+          });
+          
+      };
+
 function initProtoboard(){
 
     //Set up event handler for data entry

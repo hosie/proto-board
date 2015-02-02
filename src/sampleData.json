@@ -1,1 +1,3845 @@
-     [1,2]
+{
+ "type": "broker",
+ "name": "TESTNODE_John",
+ "uri": "/apiv1",
+ "propertiesUri": "/apiv1/properties",
+ "executionGroups": {
+  "uri": "/apiv1/executiongroups",
+  "type": "executionGroups",
+  "executionGroup": [
+   {
+    "type": "executionGroup",
+    "uri": "/apiv1/executiongroups/default",
+    "propertiesUri": "/apiv1/executiongroups/default/properties",
+    "UUID": "95e7c4c5-36cc-40c7-9d6a-2270a2a0698c",
+    "name": "default",
+    "isRunning": true,
+    "runMode": "running",
+    "isRestricted": false,
+    "resourceStatsEnabled": false,
+    "services": {
+     "uri": "/apiv1/executiongroups/default/services",
+     "type": "services",
+     "service": [],
+     "internal": "false"
+    },
+    "restApis": {
+     "uri": "/apiv1/executiongroups/default/restapis",
+     "type": "restApis",
+     "restApi": [],
+     "internal": "false"
+    },
+    "applications": {
+     "uri": "/apiv1/executiongroups/default/applications",
+     "type": "applications",
+     "application": [
+      {
+       "type": "application",
+       "uri": "/apiv1/executiongroups/default/applications/MQ",
+       "propertiesUri": "/apiv1/executiongroups/default/applications/MQ/properties",
+       "UUID": "35602ce3-a025-4600-b5a0-2e522ebe3fc8",
+       "name": "MQ",
+       "isRunning": true,
+       "runMode": "running",
+       "startMode": "Maintained",
+       "libraries": {
+        "uri": "/apiv1/executiongroups/default/applications/MQ/libraries",
+        "type": "libraries",
+        "library": [],
+        "internal": "false"
+       },
+       "messageFlows": {
+        "uri": "/apiv1/executiongroups/default/applications/MQ/messageflows",
+        "type": "messageFlows",
+        "messageFlow": [
+         {
+          "type": "messageFlow",
+          "uri": "/apiv1/executiongroups/default/applications/MQ/messageflows/MQ",
+          "propertiesUri": "/apiv1/executiongroups/default/applications/MQ/messageflows/MQ/properties",
+          "UUID": "e46a5816-4485-463e-87b0-f1535d72b144",
+          "name": "MQ",
+          "isRunning": true,
+          "runMode": "running",
+          "startMode": "Maintained",
+          "flowDesignUri": "/apiv1/executiongroups/default/applications/MQ/messageflows/MQ/flowdesign",
+          "archiveStatistics": {
+           "enabled": false,
+           "origin": "",
+           "nodeLevel": "none",
+           "threadLevel": "none",
+           "outputFormat": {
+            "userTrace": true
+           }
+          },
+          "snapshotStatistics": {
+           "enabled": false,
+           "origin": "",
+           "nodeLevel": "none",
+           "threadLevel": "none",
+           "outputFormat": {
+            "userTrace": true
+           }
+          },
+          "policies": [
+           {
+            "type": "policy",
+            "uri": "/apiv1/policy/WorkloadManagement",
+            "policyType": "WorkloadManagement",
+            "name": ""
+           }
+          ]
+         }
+        ],
+        "internal": "false"
+       },
+       "subFlows": {
+        "uri": "/apiv1/executiongroups/default/applications/MQ/subflows",
+        "type": "subFlows",
+        "subFlow": [],
+        "internal": "false"
+       },
+       "resources": {
+        "uri": "/apiv1/executiongroups/default/applications/MQ/resources",
+        "type": "resources",
+        "resource": [],
+        "internal": "false"
+       },
+       "references": {
+        "uri": "/apiv1/executiongroups/default/applications/MQ/references",
+        "type": "references",
+        "sharedLibrary": [],
+        "internal": "false"
+       }
+      }
+     ],
+     "internal": "false"
+    },
+    "libraries": {
+     "uri": "/apiv1/executiongroups/default/libraries",
+     "type": "libraries",
+     "library": [],
+     "internal": "false"
+    },
+    "sharedLibraries": {
+     "uri": "/apiv1/executiongroups/default/sharedlibraries",
+     "type": "sharedLibraries",
+     "sharedLibrary": [],
+     "internal": "false"
+    },
+    "messageFlows": {
+     "uri": "/apiv1/executiongroups/default/messageflows",
+     "type": "messageFlows",
+     "messageFlow": [],
+     "internal": "false"
+    },
+    "subFlows": {
+     "uri": "/apiv1/executiongroups/default/subflows",
+     "type": "subFlows",
+     "subFlow": [],
+     "internal": "false"
+    },
+    "resources": {
+     "uri": "/apiv1/executiongroups/default/resources",
+     "type": "resources",
+     "resource": [],
+     "internal": "false"
+    }
+   }
+  ],
+  "internal": "false"
+ },
+ "policy": {
+  "uri": "/apiv1/policy",
+  "type": "policy",
+  "configurableServices": {
+   "uri": "/apiv1/policy/configurableservices",
+   "type": "configurableServices",
+   "configurableServiceType": [
+    {
+     "uri": "/apiv1/policy/configurableservices/ActivityLog",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "ActivityLog",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/ActivityLog/ActivityLogTemplate",
+       "configurableServiceType": "ActivityLog",
+       "name": "ActivityLogTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/ActivityLog/ActivityLogTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "filter",
+         "value": ""
+        },
+        {
+         "name": "fileName",
+         "value": ""
+        },
+        {
+         "name": "minSeverityLevel",
+         "value": "INFO"
+        },
+        {
+         "name": "formatEntries",
+         "value": "false"
+        },
+        {
+         "name": "executionGroupFilter",
+         "value": ""
+        },
+        {
+         "name": "numberOfLogs",
+         "value": "4"
+        },
+        {
+         "name": "enabled",
+         "value": "true"
+        },
+        {
+         "name": "maxFileSizeMb",
+         "value": "25"
+        },
+        {
+         "name": "maxAgeMins",
+         "value": "0"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/Aggregation",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "Aggregation",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/Aggregation/Template",
+       "configurableServiceType": "Aggregation",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/Aggregation/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "queuePrefix",
+         "value": ""
+        },
+        {
+         "name": "timeoutThreads",
+         "value": ""
+        },
+        {
+         "name": "timeoutSeconds",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/CDServer",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "CDServer",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/CDServer/Default",
+       "configurableServiceType": "CDServer",
+       "name": "Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/CDServer/Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "cdPathToInputDir",
+         "value": ""
+        },
+        {
+         "name": "queuePrefix",
+         "value": ""
+        },
+        {
+         "name": "hostname",
+         "value": "localhost"
+        },
+        {
+         "name": "port",
+         "value": "1363"
+        },
+        {
+         "name": "brokerPathToInputDir",
+         "value": ""
+        },
+        {
+         "name": "cdPathToStagingDir",
+         "value": ""
+        },
+        {
+         "name": "brokerPathToStagingDir",
+         "value": ""
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/CICSConnection",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "CICSConnection",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/CICSConnection/CICSConnectionTemplate",
+       "configurableServiceType": "CICSConnection",
+       "name": "CICSConnectionTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/CICSConnection/CICSConnectionTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "connectionTimeoutSecs",
+         "value": "30"
+        },
+        {
+         "name": "clientQualifier",
+         "value": ""
+        },
+        {
+         "name": "cicsServer",
+         "value": ""
+        },
+        {
+         "name": "egForXARecovery",
+         "value": ""
+        },
+        {
+         "name": "requestTimeoutSecs",
+         "value": "120"
+        },
+        {
+         "name": "clientApplid",
+         "value": ""
+        },
+        {
+         "name": "securityIdentity",
+         "value": ""
+        },
+        {
+         "name": "gatewayURL",
+         "value": "local:"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/CORBA",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "CORBA",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/CORBA/CORBATemplate",
+       "configurableServiceType": "CORBA",
+       "name": "CORBATemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/CORBA/CORBATemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "objectReferenceName",
+         "value": ""
+        },
+        {
+         "name": "namingService",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/Collector",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "Collector",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/Collector/Template",
+       "configurableServiceType": "Collector",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/Collector/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "queuePrefix",
+         "value": ""
+        },
+        {
+         "name": "collectionExpirySeconds",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/ConnectorProviders",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "ConnectorProviders",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/ConnectorProviders/ConnectorProviderTemplate",
+       "configurableServiceType": "ConnectorProviders",
+       "name": "ConnectorProviderTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/ConnectorProviders/ConnectorProviderTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "property5",
+         "value": ""
+        },
+        {
+         "name": "connectorClassName",
+         "value": ""
+        },
+        {
+         "name": "property4",
+         "value": ""
+        },
+        {
+         "name": "property3",
+         "value": ""
+        },
+        {
+         "name": "property2",
+         "value": ""
+        },
+        {
+         "name": "property1",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/ConnectorProviders/MQTT",
+       "configurableServiceType": "ConnectorProviders",
+       "name": "MQTT",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/ConnectorProviders/MQTT/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "property5",
+         "value": ""
+        },
+        {
+         "name": "connectorClassName",
+         "value": "com.ibm.broker.connector.mqtt.MQTTConnectorFactory"
+        },
+        {
+         "name": "property4",
+         "value": ""
+        },
+        {
+         "name": "property3",
+         "value": ""
+        },
+        {
+         "name": "property2",
+         "value": ""
+        },
+        {
+         "name": "property1",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/DataCaptureSource",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "DataCaptureSource",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/DataCaptureSource/DataCaptureSourceTemplate",
+       "configurableServiceType": "DataCaptureSource",
+       "name": "DataCaptureSourceTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/DataCaptureSource/DataCaptureSourceTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "topic",
+         "value": "$SYS/Broker/[brokername]/Monitoring/[egname]/[flowname]"
+        },
+        {
+         "name": "dataCaptureStore",
+         "value": "DefaultCaptureStore"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/DataCaptureStore",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "DataCaptureStore",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/DataCaptureStore/DefaultCaptureStore",
+       "configurableServiceType": "DataCaptureStore",
+       "name": "DefaultCaptureStore",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/DataCaptureStore/DefaultCaptureStore/configurableServiceFile",
+       "properties": [
+        {
+         "name": "commitCount",
+         "value": "10"
+        },
+        {
+         "name": "useCoordinatedTransaction",
+         "value": "false"
+        },
+        {
+         "name": "threadPoolSize",
+         "value": "10"
+        },
+        {
+         "name": "queueName",
+         "value": "SYSTEM.BROKER.DC.RECORD"
+        },
+        {
+         "name": "dataSourceName",
+         "value": ""
+        },
+        {
+         "name": "schema",
+         "value": ""
+        },
+        {
+         "name": "egForView",
+         "value": ""
+        },
+        {
+         "name": "backoutQueue",
+         "value": "SYSTEM.BROKER.DC.BACKOUT"
+        },
+        {
+         "name": "egForRecord",
+         "value": ""
+        },
+        {
+         "name": "commitIntervalSecs",
+         "value": "5"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/DataDestination",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "DataDestination",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/DataDestination/WMQDestinationTemplate",
+       "configurableServiceType": "DataDestination",
+       "name": "WMQDestinationTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/DataDestination/WMQDestinationTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "endpointType",
+         "value": "WMQDestination"
+        },
+        {
+         "name": "egForReplay",
+         "value": "default"
+        },
+        {
+         "name": "endpoint",
+         "value": "wmq:/msg/queue/[QUEUE]@[QMGR]"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/DecisionServiceRepository",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "DecisionServiceRepository",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/DecisionServiceRepository/Default",
+       "configurableServiceType": "DecisionServiceRepository",
+       "name": "Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/DecisionServiceRepository/Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "resManagementProfiling",
+         "value": "false"
+        },
+        {
+         "name": "resManagementPort",
+         "value": ""
+        },
+        {
+         "name": "JDBCProviderName",
+         "value": ""
+        },
+        {
+         "name": "resManagementHost",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/DotNetAppDomain",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "DotNetAppDomain",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/DotNetAppDomain/AppDomainTemplate",
+       "configurableServiceType": "DotNetAppDomain",
+       "name": "AppDomainTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/DotNetAppDomain/AppDomainTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "DisallowCodeDownload",
+         "value": "true"
+        },
+        {
+         "name": "ApplicationBase",
+         "value": ""
+        },
+        {
+         "name": "AllowHotSwapDeploy",
+         "value": "true"
+        },
+        {
+         "name": "UseBrokerWorkpathForShadowCopyCache",
+         "value": "false"
+        },
+        {
+         "name": "ShadowCopyFiles",
+         "value": "true"
+        },
+        {
+         "name": "ConfigurationFile",
+         "value": ""
+        },
+        {
+         "name": "PrivateBinPath",
+         "value": ""
+        },
+        {
+         "name": "PrivateBinPathProbe",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/EISProviders",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "EISProviders",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EISProviders/JDEdwards",
+       "configurableServiceType": "EISProviders",
+       "name": "JDEdwards",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EISProviders/JDEdwards/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EISProviders/PeopleSoft",
+       "configurableServiceType": "EISProviders",
+       "name": "PeopleSoft",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EISProviders/PeopleSoft/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EISProviders/SAP",
+       "configurableServiceType": "EISProviders",
+       "name": "SAP",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EISProviders/SAP/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EISProviders/Siebel",
+       "configurableServiceType": "EISProviders",
+       "name": "Siebel",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EISProviders/Siebel/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "siebelPropertiesURL",
+         "value": ""
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EISProviders/Twineball",
+       "configurableServiceType": "EISProviders",
+       "name": "Twineball",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EISProviders/Twineball/configurableServiceFile",
+       "properties": [
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/EmailServer",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "EmailServer",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/EmailServer/EmailTemplate",
+       "configurableServiceType": "EmailServer",
+       "name": "EmailTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/EmailServer/EmailTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "securityIdentity",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/JDBCProviders",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "JDBCProviders",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/DB2",
+       "configurableServiceType": "JDBCProviders",
+       "name": "DB2",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/DB2/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.ibm.db2.jcc.DB2XADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.ibm.db2.jcc.DB2Driver"
+        },
+        {
+         "name": "databaseType",
+         "value": "DB2 Universal Database"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "50000"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": ""
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "C:\\Program Files\\IBM\\SQLLIB\\java"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "9.1"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:db2://[serverName]:[portNumber]/[databaseName]:user=[user];password=[password];"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Informix",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Informix",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Informix/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.informix.jdbcx.IfxXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.informix.jdbc.IfxDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Informix"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "1536"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": "<servername>"
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<JDBC DRIVER INSTALL DIRECTORY>\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:informix-sqli://[serverName]:[portNumber]/[databaseName]:informixserver=[connectionUrlFormatAttr1];user=[user];password=[password]"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Informix_With_Date_Format",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Informix_With_Date_Format",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Informix_With_Date_Format/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.informix.jdbcx.IfxXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.informix.jdbc.IfxDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Informix"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "1536"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": "MDY4/"
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": "<servername>"
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<JDBC DRIVER INSTALL DIRECTORY>\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:informix-sqli://[serverName]:[portNumber]/[databaseName]:informixserver=[connectionUrlFormatAttr1];user=[user];password=[password];dbdate=[connectionUrlFormatAttr2]"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Microsoft_SQL_Server",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Microsoft_SQL_Server",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Microsoft_SQL_Server/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.microsoft.sqlserver.jdbc.SQLServerXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Microsoft SQL Server"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "1433"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": ""
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "C:\\Program Files\\Microsoft SQL Server 2005 Driver for JDBC\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:sqlserver://[serverName]:[portNumber];DatabaseName=[databaseName];user=[user];password=[password]"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Oracle",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Oracle",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Oracle/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "oracle.jdbc.xa.client.OracleXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "oracle.jdbc.OracleDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Oracle"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "1521"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": "<SID>"
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<ORACLE HOME>\\jdbc\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:oracle:thin:[user]/[password]@[serverName]:[portNumber]:[connectionUrlFormatAttr1]"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Sybase_JConnect6_05",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Sybase_JConnect6_05",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Sybase_JConnect6_05/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.sybase.jdbc3.jdbc.SybXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.sybase.jdbc3.jdbc.SybDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Sybase"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "2048"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": ""
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<SYBASE INSTALL ROOT>\\jConnect-6_05\\classes"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:sybase:Tds:[serverName]:[portNumber]/[databaseName]?user=[user]&password=[password]"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/Teradata",
+       "configurableServiceType": "JDBCProviders",
+       "name": "Teradata",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/Teradata/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "com.teradata.jdbc.TeraDataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "com.teradata.jdbc.TeraDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "Teradata"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "false"
+        },
+        {
+         "name": "portNumber",
+         "value": "1025"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": ""
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<JDBC DRIVER INSTALL DIRECTORY>\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:teradata://[serverName]/DATABASE=[databaseName],DBS_PORT=[portNumber],TMODE=ANSI"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDBCProviders/solidDB",
+       "configurableServiceType": "JDBCProviders",
+       "name": "solidDB",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDBCProviders/solidDB/configurableServiceFile",
+       "properties": [
+        {
+         "name": "type4DatasourceClassName",
+         "value": "solid.jdbc.xa.SolidXADataSource"
+        },
+        {
+         "name": "type4DriverClassName",
+         "value": "solid.jdbc.SolidDriver"
+        },
+        {
+         "name": "databaseType",
+         "value": "solidDB"
+        },
+        {
+         "name": "jdbcProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "portNumber",
+         "value": "2315"
+        },
+        {
+         "name": "connectionUrlFormatAttr5",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr4",
+         "value": ""
+        },
+        {
+         "name": "serverName",
+         "value": "default_Database_Server_Name"
+        },
+        {
+         "name": "connectionUrlFormatAttr3",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr2",
+         "value": ""
+        },
+        {
+         "name": "connectionUrlFormatAttr1",
+         "value": ""
+        },
+        {
+         "name": "environmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "maxConnectionPoolSize",
+         "value": "0"
+        },
+        {
+         "name": "description",
+         "value": "default_Description"
+        },
+        {
+         "name": "jarsURL",
+         "value": "<JDBC DRIVER INSTALL DIRECTORY>\\lib"
+        },
+        {
+         "name": "databaseName",
+         "value": "default_Database_Name"
+        },
+        {
+         "name": "databaseVersion",
+         "value": "default_Database_Version"
+        },
+        {
+         "name": "securityIdentity",
+         "value": "default_User@default_Server"
+        },
+        {
+         "name": "connectionUrlFormat",
+         "value": "jdbc:solid://[serverName]:[portNumber]/[user]/[password]"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/JDEdwardsConnection",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "JDEdwardsConnection",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JDEdwardsConnection/JDEdwardsConnectionTemplate",
+       "configurableServiceType": "JDEdwardsConnection",
+       "name": "JDEdwardsConnectionTemplate",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JDEdwardsConnection/JDEdwardsConnectionTemplate/configurableServiceFile",
+       "properties": [
+        {
+         "name": "Environment",
+         "value": ""
+        },
+        {
+         "name": "Role",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/JMSProviders",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "JMSProviders",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/ActiveMQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "ActiveMQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/ActiveMQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/BEA_Weblogic",
+       "configurableServiceType": "JMSProviders",
+       "name": "BEA_Weblogic",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/BEA_Weblogic/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "com.ibm.broker.apihandler.BEAWebLogicAPIHandler"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "<Server Name>"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "<URL JNDI Bindings>"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "weblogic.jndi.WLInitialContextFactory"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/FioranoMQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "FioranoMQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/FioranoMQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Generic_File",
+       "configurableServiceType": "JMSProviders",
+       "name": "Generic_File",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Generic_File/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Generic_LDAP",
+       "configurableServiceType": "JMSProviders",
+       "name": "Generic_LDAP",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Generic_LDAP/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/IBM_MessageSight",
+       "configurableServiceType": "JMSProviders",
+       "name": "IBM_MessageSight",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/IBM_MessageSight/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/JBoss",
+       "configurableServiceType": "JMSProviders",
+       "name": "JBoss",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/JBoss/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "true"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/JOnAS",
+       "configurableServiceType": "JMSProviders",
+       "name": "JOnAS",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/JOnAS/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Joram",
+       "configurableServiceType": "JMSProviders",
+       "name": "Joram",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Joram/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/OpenJMS",
+       "configurableServiceType": "JMSProviders",
+       "name": "OpenJMS",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/OpenJMS/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Oracle_AQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "Oracle_AQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Oracle_AQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Oracle_OEMS",
+       "configurableServiceType": "JMSProviders",
+       "name": "Oracle_OEMS",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Oracle_OEMS/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/SeeBeyond",
+       "configurableServiceType": "JMSProviders",
+       "name": "SeeBeyond",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/SeeBeyond/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/SonicMQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "SonicMQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/SonicMQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/SwiftMQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "SwiftMQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/SwiftMQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/Tibco_EMS",
+       "configurableServiceType": "JMSProviders",
+       "name": "Tibco_EMS",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/Tibco_EMS/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/WebSphere_MQ",
+       "configurableServiceType": "JMSProviders",
+       "name": "WebSphere_MQ",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/WebSphere_MQ/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "\\java\\lib"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "\\java\\lib"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JMSProviders/WebSphere_WAS_Client",
+       "configurableServiceType": "JMSProviders",
+       "name": "WebSphere_WAS_Client",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JMSProviders/WebSphere_WAS_Client/configurableServiceFile",
+       "properties": [
+        {
+         "name": "jarsURL",
+         "value": "default_Path"
+        },
+        {
+         "name": "proprietaryAPIAttr5",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIHandler",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr4",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiBindingsLocation",
+         "value": ""
+        },
+        {
+         "name": "proprietaryAPIAttr3",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsAsyncExceptionHandling",
+         "value": "false"
+        },
+        {
+         "name": "proprietaryAPIAttr2",
+         "value": "default_none"
+        },
+        {
+         "name": "proprietaryAPIAttr1",
+         "value": "default_none"
+        },
+        {
+         "name": "jndiEnvironmentParms",
+         "value": "default_none"
+        },
+        {
+         "name": "jmsProviderXASupport",
+         "value": "true"
+        },
+        {
+         "name": "clientAckBatchSize",
+         "value": "0"
+        },
+        {
+         "name": "nativeLibs",
+         "value": "default_Path"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": ""
+        },
+        {
+         "name": "clientAckBatchTime",
+         "value": "0"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/JavaClassLoader",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "JavaClassLoader",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/JavaClassLoader/Template",
+       "configurableServiceType": "JavaClassLoader",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/JavaClassLoader/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "includedDeployedJars",
+         "value": "automatic"
+        },
+        {
+         "name": "sharedJarPath",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/MonitoringProfiles",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "MonitoringProfiles",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/MonitoringProfiles/DefaultMonitoringProfile",
+       "configurableServiceType": "MonitoringProfiles",
+       "name": "DefaultMonitoringProfile",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/MonitoringProfiles/DefaultMonitoringProfile/configurableServiceFile",
+       "properties": [
+        {
+         "name": "profileProperties",
+         "value": "&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;monitoringProfile xmlns=&quot;http___www.ibm.com_xmlns_prod_websphere_messagebroker_6.1.0_monitoring_profile&quot; xmlns_xsi=&quot;http___www.w3.org_2001_XMLSchema-instance&quot;&gt;&lt;bitstreamDataQuery encoding=&quot;base64Binary&quot; bitstreamContent=&quot;all&quot;_&gt;&lt;_monitoringProfile&gt;"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/PolicySetBindings",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "PolicySetBindings",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/PolicySetBindings/WSS10Default",
+       "configurableServiceType": "PolicySetBindings",
+       "name": "WSS10Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/PolicySetBindings/WSS10Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "ws-security",
+         "value": "&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;securityBindings xmlns=&quot;http___www.ibm.com_xmlns_prod_websphere_200608_ws-securitybinding&quot;&gt;&lt;securityBinding name=&quot;application&quot;&gt;&lt;securityInboundBindingConfig&gt;&lt;tokenConsumer name=&quot;con_unametoken&quot; classname=&quot;com.ibm.ws.wssecurity.wssapi.token.impl.CommonTokenConsumer&quot;&gt;&lt;valueType localName=&quot;http___docs.oasis-open.org_wss_2004_01_oasis-200401-wss-username-token-profile-1.0#UsernameToken&quot;_&gt;&lt;securityTokenReference reference=&quot;request_uname_token&quot;_&gt;&lt;jAASConfig configName=&quot;system.wss.consume.unt&quot;_&gt;&lt;callbackHandler classname=&quot;com.ibm.websphere.wssecurity.callbackhandler.UNTConsumeCallbackHandler&quot;_&gt;&lt;_tokenConsumer&gt;&lt;_securityInboundBindingConfig&gt;&lt;_securityBinding&gt;&lt;_securityBindings&gt;"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/PolicySets",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "PolicySets",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/PolicySets/WSRMDefault",
+       "configurableServiceType": "PolicySets",
+       "name": "WSRMDefault",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/PolicySets/WSRMDefault/configurableServiceFile",
+       "properties": [
+        {
+         "name": "ws-security",
+         "value": ""
+        },
+        {
+         "name": "ws-rm",
+         "value": "&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;policy_Policy xmlns__200702=&quot;http___docs.oasis-open.org_ws-rx_wsrmp_200702&quot; xmlns_policy=&quot;http___www.w3.org_ns_ws-policy&quot; xmlns_set=&quot;http___www.ibm.com_websphere_webservices_wsrmPolicySet&quot;&gt;&lt;policy_ExactlyOne&gt;&lt;policy_All&gt;&lt;_200702_RMAssertion&gt;&lt;set_inOrderDelivery&gt;true&lt;_set_inOrderDelivery&gt;&lt;set_useMakeConnection&gt;true&lt;_set_useMakeConnection&gt;&lt;set_qualityOfService&gt;managedPersistent&lt;_set_qualityOfService&gt;&lt;__200702_RMAssertion&gt;&lt;_policy_All&gt;&lt;_policy_ExactlyOne&gt;&lt;_policy_Policy&gt;"
+        }
+       ]
+      },
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/PolicySets/WSS10Default",
+       "configurableServiceType": "PolicySets",
+       "name": "WSS10Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/PolicySets/WSS10Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "ws-security",
+         "value": "&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;wsp_Policy xmlns_wsp=&quot;http___schemas.xmlsoap.org_ws_2004_09_policy&quot; xmlns_wsu=&quot;http___docs.oasis-open.org_wss_2004_01_oasis-200401-wss-wssecurity-utility-1.0.xsd&quot; xmlns_sp=&quot;http___docs.oasis-open.org_ws-sx_ws-securitypolicy_200512&quot; xmlns_wsa=&quot;http___schemas.xmlsoap.org_ws_2004_08_addressing&quot; xmlns_spe=&quot;http___www.ibm.com_xmlns_prod_websphere_200605_ws-securitypolicy-ext&quot;&gt;&lt;sp_SupportingTokens&gt;&lt;wsp_Policy wsu_Id=&quot;request_uname_token&quot;&gt;&lt;sp_UsernameToken sp_IncludeToken=&quot;http___docs.oasis-open.org_ws-sx_ws-securitypolicy_200512_IncludeToken_AlwaysToRecipient&quot;&gt;&lt;wsp_Policy&gt;&lt;sp_WssUsernameToken10&gt;&lt;_sp_WssUsernameToken10&gt;&lt;_wsp_Policy&gt;&lt;_sp_UsernameToken&gt;&lt;_wsp_Policy&gt;&lt;_sp_SupportingTokens&gt;&lt;_wsp_Policy&gt;"
+        },
+        {
+         "name": "ws-rm",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/Resequence",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "Resequence",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/Resequence/Template",
+       "configurableServiceType": "Resequence",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/Resequence/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "queuePrefix",
+         "value": ""
+        },
+        {
+         "name": "endSequenceSeconds",
+         "value": ""
+        },
+        {
+         "name": "startSequenceSeconds",
+         "value": ""
+        },
+        {
+         "name": "missingMessageTimeoutSeconds",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/SAPConnection",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "SAPConnection",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/SAPConnection/Template",
+       "configurableServiceType": "SAPConnection",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/SAPConnection/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "gatewayService",
+         "value": ""
+        },
+        {
+         "name": "rfcProgramID",
+         "value": ""
+        },
+        {
+         "name": "retryInterval",
+         "value": ""
+        },
+        {
+         "name": "sharedTidStoreClientDefinitionFile",
+         "value": ""
+        },
+        {
+         "name": "applicationServerHost",
+         "value": ""
+        },
+        {
+         "name": "client",
+         "value": ""
+        },
+        {
+         "name": "RFCTracePath",
+         "value": ""
+        },
+        {
+         "name": "RFCTraceOn",
+         "value": ""
+        },
+        {
+         "name": "retryLimit",
+         "value": ""
+        },
+        {
+         "name": "messageServerHost",
+         "value": ""
+        },
+        {
+         "name": "sharedTidStoreQmgr",
+         "value": ""
+        },
+        {
+         "name": "gatewayHost",
+         "value": ""
+        },
+        {
+         "name": "systemNumber",
+         "value": ""
+        },
+        {
+         "name": "numberOfListeners",
+         "value": ""
+        },
+        {
+         "name": "assuredOnceDelivery",
+         "value": ""
+        },
+        {
+         "name": "SAPSystemID",
+         "value": ""
+        },
+        {
+         "name": "RFCTraceLevel",
+         "value": ""
+        },
+        {
+         "name": "loadBalancing",
+         "value": ""
+        },
+        {
+         "name": "retryConnectionOnStartup",
+         "value": ""
+        },
+        {
+         "name": "logonGroup",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/SecurityProfiles",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "SecurityProfiles",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/SecurityProfiles/Default_Propagation",
+       "configurableServiceType": "SecurityProfiles",
+       "name": "Default_Propagation",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/SecurityProfiles/Default_Propagation/configurableServiceFile",
+       "properties": [
+        {
+         "name": "mapping",
+         "value": "NONE"
+        },
+        {
+         "name": "rejectBlankpassword",
+         "value": "FALSE"
+        },
+        {
+         "name": "propagation",
+         "value": "TRUE"
+        },
+        {
+         "name": "passwordValue",
+         "value": "PLAIN"
+        },
+        {
+         "name": "keyStore",
+         "value": "Reserved for future use"
+        },
+        {
+         "name": "authorizationConfig",
+         "value": ""
+        },
+        {
+         "name": "authenticationConfig",
+         "value": ""
+        },
+        {
+         "name": "idToPropagateToTransport",
+         "value": "Message ID"
+        },
+        {
+         "name": "trustStore",
+         "value": "Reserved for future use"
+        },
+        {
+         "name": "authentication",
+         "value": "NONE"
+        },
+        {
+         "name": "authorization",
+         "value": "NONE"
+        },
+        {
+         "name": "mappingConfig",
+         "value": ""
+        },
+        {
+         "name": "transportPropagationConfig",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/ServiceRegistries",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "ServiceRegistries",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/ServiceRegistries/DefaultWSRR",
+       "configurableServiceType": "ServiceRegistries",
+       "name": "DefaultWSRR",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/ServiceRegistries/DefaultWSRR/configurableServiceFile",
+       "properties": [
+        {
+         "name": "predefinedCacheQueries",
+         "value": ""
+        },
+        {
+         "name": "endpointAddress",
+         "value": "http://fill.in.your.host.here:9080/WSRRCoreSDO/services/WSRRCoreSDOPort"
+        },
+        {
+         "name": "refreshQueriesAfterNotification",
+         "value": "true"
+        },
+        {
+         "name": "enableCacheNotification",
+         "value": "false"
+        },
+        {
+         "name": "subscriptionTopic",
+         "value": "jms/SuccessTopic"
+        },
+        {
+         "name": "locationJNDIBinding",
+         "value": "iiop://fill.in.your.host.here:2809/"
+        },
+        {
+         "name": "needCache",
+         "value": "true"
+        },
+        {
+         "name": "timeout",
+         "value": "100000000"
+        },
+        {
+         "name": "connectionFactoryName",
+         "value": "jms/SRConnectionFactory"
+        },
+        {
+         "name": "connectionTimeout",
+         "value": "180"
+        },
+        {
+         "name": "initialContextFactory",
+         "value": "com.ibm.websphere.naming.WsnInitialContextFactory"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/TCPIPClient",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "TCPIPClient",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/TCPIPClient/Default",
+       "configurableServiceType": "TCPIPClient",
+       "name": "Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/TCPIPClient/Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "SO_SNDBUF",
+         "value": "0"
+        },
+        {
+         "name": "AlternativeAddresses",
+         "value": ""
+        },
+        {
+         "name": "TrafficClass",
+         "value": "-1"
+        },
+        {
+         "name": "CloseWithUnprocessedData",
+         "value": "false"
+        },
+        {
+         "name": "SSLProtocol",
+         "value": ""
+        },
+        {
+         "name": "MinimumConnections",
+         "value": "0"
+        },
+        {
+         "name": "Hostname",
+         "value": "localhost"
+        },
+        {
+         "name": "SO_KEEPALIVE",
+         "value": "false"
+        },
+        {
+         "name": "SO_LINGER",
+         "value": "false"
+        },
+        {
+         "name": "Port",
+         "value": "0"
+        },
+        {
+         "name": "SSLCiphers",
+         "value": ""
+        },
+        {
+         "name": "MaxReceiveRecordBytes",
+         "value": "100000000"
+        },
+        {
+         "name": "UseUniqueConnectionPool",
+         "value": "false"
+        },
+        {
+         "name": "TCP_NODELAY",
+         "value": "false"
+        },
+        {
+         "name": "SO_LINGER_TIMEOUT_SEC",
+         "value": "-1"
+        },
+        {
+         "name": "SO_RCVBUF",
+         "value": "0"
+        },
+        {
+         "name": "MaximumConnections",
+         "value": "100"
+        },
+        {
+         "name": "ExpireConnectionSec",
+         "value": "-1"
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/TCPIPServer",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "TCPIPServer",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/TCPIPServer/Default",
+       "configurableServiceType": "TCPIPServer",
+       "name": "Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/TCPIPServer/Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "SSLKeyAlias",
+         "value": ""
+        },
+        {
+         "name": "SO_LINGER_TIMEOUT_SEC",
+         "value": "-1"
+        },
+        {
+         "name": "CloseWithUnprocessedData",
+         "value": "false"
+        },
+        {
+         "name": "SO_KEEPALIVE",
+         "value": "false"
+        },
+        {
+         "name": "SSLCiphers",
+         "value": ""
+        },
+        {
+         "name": "MaximumConnections",
+         "value": "100"
+        },
+        {
+         "name": "Port",
+         "value": "0"
+        },
+        {
+         "name": "TrafficClass",
+         "value": "-1"
+        },
+        {
+         "name": "SO_LINGER",
+         "value": "false"
+        },
+        {
+         "name": "TCP_NODELAY",
+         "value": "false"
+        },
+        {
+         "name": "ExpireConnectionSec",
+         "value": "-1"
+        },
+        {
+         "name": "SSLClientAuth",
+         "value": ""
+        },
+        {
+         "name": "SO_RCVBUF",
+         "value": "0"
+        },
+        {
+         "name": "MaxReceiveRecordBytes",
+         "value": "100000000"
+        },
+        {
+         "name": "SO_SNDBUF",
+         "value": "0"
+        },
+        {
+         "name": "SSLProtocol",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/Timer",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "Timer",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/Timer/Template",
+       "configurableServiceType": "Timer",
+       "name": "Template",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/Timer/Template/configurableServiceFile",
+       "properties": [
+        {
+         "name": "queuePrefix",
+         "value": ""
+        },
+        {
+         "name": "timeoutIntervalSeconds",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    },
+    {
+     "uri": "/apiv1/policy/configurableservices/WXSServer",
+     "type": "configurableServiceTypes",
+     "configurableServiceType": "WXSServer",
+     "hasNonIBMDefinedChildren": false,
+     "configurableService": [
+      {
+       "type": "configurableService",
+       "uri": "/apiv1/policy/configurableservices/WXSServer/Default",
+       "configurableServiceType": "WXSServer",
+       "name": "Default",
+       "ibmDefined": true,
+       "configurableServiceFileURI": "/apiv1/policy/configurableservices/WXSServer/Default/configurableServiceFile",
+       "properties": [
+        {
+         "name": "gridName",
+         "value": "gridname"
+        },
+        {
+         "name": "catalogServiceEndPoints",
+         "value": "hostname:port"
+        },
+        {
+         "name": "overrideObjectGridFile",
+         "value": ""
+        },
+        {
+         "name": "securityIdentity",
+         "value": ""
+        }
+       ]
+      }
+     ],
+     "internal": "false"
+    }
+   ],
+   "internal": "false"
+  },
+  "policyTypes": [
+   {
+    "uri": "/apiv1/policy/MQEndpoint",
+    "type": "policyType",
+    "policyType": "MQEndpoint",
+    "policy": [
+     {
+      "type": "policy",
+      "uri": "/apiv1/policy/MQEndpoint/IB9QMGR",
+      "policyType": "MQEndpoint",
+      "name": "IB9QMGR",
+      "documentURI": "http://R9034KTX.hursley.ibm.com:4415/isr/oslc/resource/isr_core/c8a43564-ca13-455e-9fcd-9dbe32d08f47"
+     }
+    ],
+    "internal": "false"
+   },
+   {
+    "uri": "/apiv1/policy/MQTTPublish",
+    "type": "policyType",
+    "policyType": "MQTTPublish",
+    "policy": [
+     {
+      "type": "policy",
+      "uri": "/apiv1/policy/MQTTPublish/mypolicy",
+      "policyType": "MQTTPublish",
+      "name": "mypolicy",
+      "documentURI": "http://R9034KTX.hursley.ibm.com:4415/isr/oslc/resource/isr_core/ec66adf1-74c7-49f2-b20b-edbf9a51ba0a"
+     },
+     {
+      "type": "policy",
+      "uri": "/apiv1/policy/MQTTPublish/policy2",
+      "policyType": "MQTTPublish",
+      "name": "policy2",
+      "documentURI": "http://R9034KTX.hursley.ibm.com:4415/isr/oslc/resource/isr_core/6a8ff53e-715f-4d3f-ab4c-584fbb4346e6"
+     }
+    ],
+    "internal": "false"
+   },
+   {
+    "uri": "/apiv1/policy/MQTTSubscribe",
+    "type": "policyType",
+    "policyType": "MQTTSubscribe",
+    "policy": [],
+    "internal": "false"
+   },
+   {
+    "uri": "/apiv1/policy/WorkloadManagement",
+    "type": "policyType",
+    "policyType": "WorkloadManagement",
+    "policy": [],
+    "internal": "false"
+   }
+  ],
+  "businessTransactionRecorders": {
+   "uri": "/apiv1/policy/businesstransactionrecorders",
+   "type": "businessTransactionRecorders",
+   "businessTransactionRecorder": [],
+   "hasChildren": "false",
+   "internal": "false"
+  },
+  "internal": "false"
+ },
+ "data": {
+  "uri": "/apiv1/data",
+  "type": "data",
+  "dataCaptureStores": {
+   "uri": "/apiv1/data/datacapture",
+   "type": "dataCaptureStores",
+   "dataCaptureStore": [],
+   "internal": "false"
+  },
+  "internal": "false"
+ },
+ "security": {
+  "uri": "/apiv1/security",
+  "type": "security",
+  "users": {
+   "uri": "/apiv1/security/users",
+   "type": "users",
+   "user": [],
+   "internal": "false"
+  },
+  "currentUser": {
+   "type": "currentUser",
+   "username": "Default",
+   "name": "Default",
+   "role": "SYSTEM",
+   "uri": "/apiv1/security/currentuser",
+   "profileUri": "/apiv1/security/currentuser/profile",
+   "permissionsUri": "/apiv1/security/currentuser/permissions"
+  },
+  "internal": "false"
+ },
+ "monitoring": {
+  "uri": "/apiv1/monitoring",
+  "type": "monitoring",
+  "adminLog": {
+   "uri": "/apiv1/monitoring/adminlog",
+   "type": "adminLog",
+   "numberOfLogEvents": 36,
+   "timestampFormat": "yyyy-MM-dd HH:mm:ss.SSS z",
+   "adminLogEntry": [
+    {
+     "bipNumber": "BIP2880I",
+     "timestamp": 1422794762321,
+     "source": "Change Notification",
+     "value": "BIP2880I: The property 'processId' has changed from '0' to '11280' on object 'default' of type 'ExecutionGroup' with parent 'TESTNODE_John' of type 'Broker'."
+    },
+    {
+     "bipNumber": "BIP2880I",
+     "timestamp": 1422794762442,
+     "source": "Change Notification",
+     "value": "BIP2880I: The property 'processId' has changed from '11280' to '4252' on object 'default' of type 'ExecutionGroup' with parent 'TESTNODE_John' of type 'Broker'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422794858720,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422794861387,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422794963009,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422794963707,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796571126,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796571885,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796603296,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796603719,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796615397,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796616390,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796818334,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422796818868,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422798954800,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422798955402,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422799856723,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422799856757,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422799932982,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422799933128,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801258214,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801258266,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801429559,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801430132,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801432465,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801432554,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801438827,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801438964,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801685625,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801685648,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801713285,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801713439,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801738458,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801738561,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801761421,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    },
+    {
+     "bipNumber": "BIP2871I",
+     "timestamp": 1422801761512,
+     "source": "Administration Request",
+     "value": "BIP2871I: The request made by user 'SYSTEM[Default]' to 'execute' the resource 'Default' of type 'WebUser' on parent 'WebAdmin' of type 'WebAdmin' has the status of 'INITIATED'."
+    }
+   ],
+   "internal": "false"
+  },
+  "events": {
+   "uri": "/apiv1/monitoring/events",
+   "type": "events",
+   "event": [],
+   "internal": "true"
+  },
+  "internal": "false"
+ }
+}
